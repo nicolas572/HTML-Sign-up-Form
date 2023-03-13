@@ -14,14 +14,22 @@
         <h2>Vacation Contest Sign-Up Form</h2>
         <form method="GET" action="results.html"> 
             <div>
+                <span class="required-field">*</span>
                 <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35">
             </div>
             <div>
-                <label for="'lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <span class="required-field">*</span>
+                <label for="lastname">Your Last Name</label>
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35">
+            </div>
+            <div>
+                <label for="age">Your Age</label>
+                <input type="number" id="age" name="age" min="21" max="120">
+                <h5>Must be 21 or older to enter contest!</h5>
             </div>
             <fieldset>
+                <span class="required-field">*</span>
                 <legend>Your Contact Info</legend>
                 <label for="email">Your Email</label>
                 <input type="text" id="email" name="email">
@@ -89,7 +97,7 @@
             </div>
             <div>
                 <label for="zip code">Your Zip Code</label>
-                <input type="text" id="zip" name="zip">
+                <input type="number" id="zip" name="zip">
             </div>
             </fieldset> 
             <!-- TODO: Second fieldset -->
